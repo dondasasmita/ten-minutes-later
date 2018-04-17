@@ -10,16 +10,19 @@ public class Time {
 //    private String currentTime;
     private String tenMinutesLater;
 
+    //method to get the current time using java util.Calendar class
     public String getCurrentTime() {
         Calendar cal = Calendar.getInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
         return sdf.format(cal.getTime());
     }
 
+
     public String getTenMinutesLater() {
         return tenMinutesLater;
     }
 
+    //set the ten minutes from
     public void setTenMinutesLater(String currentTime) {
         SimpleDateFormat df = new SimpleDateFormat("HH:mm");
         try {
